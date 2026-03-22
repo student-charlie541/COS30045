@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <header>
         <nav class="navbar">
             <a href="index.html" class="logo">
@@ -21,16 +21,35 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <section>
             <h1>Welcome to Appliance Energy Consumption</h1>
             <p>Learn how your appliances use energy and how to save electricity effectively!</p>
         </section>
+
+        <section>
+            <h2>Appliance Energy Calculator</h2>
+            <form id="energy-form">
+                <label for="wattage">Appliance Power (Watts):</label><br>
+                <input id="wattage"><br><br>
+
+                <label for="hours">Average Hours of Use per Day:</label><br>
+                <input id="hours"><br><br>
+
+                <label for="price">Electricity Price (cents per kWh):</label><br>
+                <input id="price"><br><br>
+
+                <button type="button" id="calculate-btn">Calculate</button>
+            </form>
+
+            <div id="results" style="margin-top:20px;"></div>
+        </section>
     </main>
-        
+
     <footer>
         <h6>2026 - Charles Sheehan - GenAI was NOT used</h6>
     </footer>
+
+    <script src="assets/js/D3.js"></script>
 </body>
 </html>
