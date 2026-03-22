@@ -13,9 +13,6 @@ a {
     margin-right: 15px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
 
 /* Headings and paragraphs */
 h1 {
@@ -31,4 +28,25 @@ p {
 img {
     max-width: 10%;
     max-height: auto;
+}
+
+/* Navigation links */
+.nav-links a {
+    color: #000;                /* default text color */
+    padding: 5px 10px;          /* spacing around text */
+    transition: background-color 0.3s, color 0.3s; /* smooth hover effect */
+    border-radius: 3px;         /* slightly rounded corners */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #007acc;  /* change background on hover */
+    color: #fff;                /* text color on hover */
+}
+
+/* Optional: indicate the active page */
+.nav-links a.active {
+    font-weight: bold;
+    background-color: #005f99;
+    color: #fff;
 }
