@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     button.addEventListener("click", function() {
         // Get input values
-        let wattage = parseFloat(document.getElementById("wattage").value);
-        let hours = parseFloat(document.getElementById("hours").value);
-        let price = parseFloat(document.getElementById("price").value);
+        wattage = parseFloat(document.getElementById("wattage").value);
+        hours = parseFloat(document.getElementById("hours").value);
+        price = parseFloat(document.getElementById("price").value);
 
         resultsDiv.innerHTML = "";
 
@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Calculations
-        let dailyKWh = (wattage * hours) / 1000;
-        let monthlyKWh = dailyKWh * 30;
-        let yearlyKWh = dailyKWh * 365;
-        let monthlyCost = monthlyKWh * (price / 100);
-        let yearlyCost = yearlyKWh * (price / 100);
+        dailyKWh = (wattage * hours) / 1000;
+        monthlyKWh = dailyKWh * 30;
+        yearlyKWh = dailyKWh * 365;
+        monthlyCost = monthlyKWh * (price / 100);
+        yearlyCost = yearlyKWh * (price / 100);
 
         // Display results
         resultsDiv.innerHTML = `
